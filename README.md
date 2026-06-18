@@ -21,3 +21,28 @@ En esta práctica aprendí a crear una aplicación utilizando Spring boot. Prime
 También se implemento un endpoint /api/status. Un endpoint es una dirección de la aplicación a donde los clientes pueden enviar solicitudes HTTP. 
 
 Además comprendí que spring boot simplifica y facilita la creación de aplicaciones backend ya que incorpora un servidor embebido, en este proyecto, Tomcat. Debido a esto, no necesitamos instalar un servidor web externo.
+
+
+# 02_estructura_proyecto
+
+## Captura del IDE mostrando la estructura modular
+
+![Estructura modular](/assets/01-estructura-modular.png)
+
+## Captura del archivo Fundamentos01Application.java
+
+![Fundamentos01Application.java](/assets/02-fundamentos-aplication-java.png)
+
+## Captura del arbol generado desde terminal
+
+![Arbol generado desde terminal](/assets/03-arbol-generado-terminal.png)
+
+## Explicación breve
+
+La organización modular es importante debido que permite separar responsabilidades dentro del proyecto. Es decir, cada módulo representa una parte de la aplicación. Esta organización nos facilita el mantenimiento ya que cada funcionalidad tiene su propio espacio
+
+Los controllers, services y repositories se relacionana de la siguiente manera. Los controllers se encargan de recibir las peticiones HTTP, los servicios tienen la lógica de negocio y los repositoriso se encargan de comunicarse con la base de datos
+
+Mantener una estrctura clara nos evita que las clases con distintas funcionalidades se empiecen a mezclar dentro de una misma carpeta. Con una estructura limpia evitamos las confusiones que este problema puede generar y nos facilita encontrar archivos además de que Spring boot tambíen puede detectar correctamente los componenetes
+
+
